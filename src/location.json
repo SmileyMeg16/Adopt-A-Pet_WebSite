@@ -1,0 +1,131 @@
+{
+    "dog_shelters": [
+      {
+        "name": "Paws of Love Dog Shelter",
+        "address": "123 Main Street, Dogtown, USA",
+        "email": "pawsoflovedogs@example.com",
+        "phone_number": "555-123-4567"
+      },
+      {
+        "name": "Happy Tails Dog Rescue",
+        "address": "456 Elm Street, Puptown, USA",
+        "email": "happytailsdogs@example.com",
+        "phone_number": "555-987-6543"
+      },
+      {
+        "name": "Woof Haven",
+        "address": "789 Oak Avenue, Barkville, USA",
+        "email": "woofhaven@example.com",
+        "phone_number": "555-456-7890"
+      },
+      {
+        "name": "Bark Central Shelter",
+        "address": "101 Willow Lane, Canineville, USA",
+        "email": "barkcentral@example.com",
+        "phone_number": "555-567-8901"
+      },
+      {
+        "name": "Puppy Paradise Adoption Center",
+        "address": "222 Cedar Road, Dogsville, USA",
+        "email": "puppyparadise@example.com",
+        "phone_number": "555-234-5678"
+      }
+    ],
+    "cat_shelters": [
+      {
+        "name": "Whiskers and Wags Cat Shelter",
+        "address": "321 Oak Street, Catville, USA",
+        "email": "whiskerswagscats@example.com",
+        "phone_number": "555-321-4567"
+      },
+      {
+        "name": "Happy Paws Cat Rescue",
+        "address": "654 Elm Avenue, Kittyville, USA",
+        "email": "happypawscats@example.com",
+        "phone_number": "555-654-7890"
+      },
+      {
+        "name": "Meow Haven",
+        "address": "987 Birch Lane, Felineville, USA",
+        "email": "meowhaven@example.com",
+        "phone_number": "555-987-1234"
+      },
+      {
+        "name": "Purrfect Central Shelter",
+        "address": "111 Cedar Road, Purrtown, USA",
+        "email": "purrfectcentral@example.com",
+        "phone_number": "555-111-2345"
+      },
+      {
+        "name": "Kitty Paradise Adoption Center",
+        "address": "888 Maple Street, Cattown, USA",
+        "email": "kittyparadise@example.com",
+        "phone_number": "555-888-5678"
+      }
+    ],
+    "dog_breeders": [
+      {
+        "name": "Cuddly Canines Breeding",
+        "address": "444 Pine Road, Puppyland, USA",
+        "email": "cuddlycanines@example.com",
+        "phone_number": "555-444-7777"
+      },
+      {
+        "name": "Puppy Palace Breeding",
+        "address": "777 Dogwood Lane, Dogsville, USA",
+        "email": "puppypalace@example.com",
+        "phone_number": "555-777-5432"
+      },
+      {
+        "name": "Woofy Wonders Breeders",
+        "address": "333 Bark Avenue, Canineville, USA",
+        "email": "woofywonders@example.com",
+        "phone_number": "555-333-1098"
+      },
+      {
+        "name": "Barktastic Puppies",
+        "address": "555 Pup Park Road, Barksville, USA",
+        "email": "barktasticpuppies@example.com",
+        "phone_number": "555-555-9012"
+      },
+      {
+        "name": "Pawsome Dog Breeding",
+        "address": "999 Doggy Drive, Dogsville, USA",
+        "email": "pawsomedogs@example.com",
+        "phone_number": "555-999-0123"
+      }
+    ],
+    "cat_breeders": [
+      {
+        "name": "Whisker Wonderland Breeders",
+        "address": "1111 Kitty Street, Kittyville, USA",
+        "email": "whiskerwonderland@example.com",
+        "phone_number": "555-111-6789"
+      },
+      {
+        "name": "Purrfect Kittens Breeding",
+        "address": "4444 Feline Road, Felineville, USA",
+        "email": "purrfectkittens@example.com",
+        "phone_number": "555-444-5432"
+      },
+      {
+        "name": "Meow Magic Breeders",
+        "address": "7777 Catnip Lane, Catnipville, USA",
+        "email": "meowmagic@example.com",
+        "phone_number": "555-777-1098"
+      },
+      {
+        "name": "Catnip Haven Breeders",
+        "address": "8888 Purr Park Road, Purrsville, USA",
+        "email": "catniphaven@example.com",
+        "phone_number": "555-888-9012"
+      },
+      {
+        "name": "Paws and Purrs Breeding",
+        "address": "5555 Whisker Way, Whiskerville, USA",
+        "email": "pawsandpurrs@example.com",
+        "phone_number": "555-555-3456"
+      }
+    ]
+  }
+  

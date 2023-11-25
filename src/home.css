@@ -1,0 +1,25 @@
+/* Add CSS styles for image-container as per your design */
+.image-container {
+    max-width: 100%;
+    margin: 0 10px; 
+}
+  .image-container img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+  }
+  
+  h1 {
+    text-align: center;
+  }
+  
+  p {
+    text-align: center;
+  }
+  
+  .image-row {
+    display: flex;
+    justify-content: center; 
+  }
+  

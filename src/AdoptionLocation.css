@@ -1,0 +1,35 @@
+/* src/LocationsToAdopt.css */
+body {
+    background-color: #ccccff; ;
+  }
+  
+  .locations-container {
+      margin: 20px;
+      display: flex;
+      flex-wrap: wrap;
+      flex-direction: column; 
+      align-items: center; 
+      text-align: center; 
+  
+    }
+    
+    .location-group {
+      margin: 20px 0;
+      width: 100%;
+    }
+    
+    .location-cards {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center; 
+    }
+    
+    .location-card {
+      background-color: #f0f0f0;
+      padding: 10px;
+      border: 1px solid #ddd;
+      border-radius: 5px;
+      margin: 5px;
+      width: 250px; 
+    }
+    

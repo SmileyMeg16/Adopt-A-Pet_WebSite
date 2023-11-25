@@ -1,0 +1,47 @@
+/* src/AnimalsAvailable.css */
+body {
+    background-color: #ccccff;
+}
+
+.animals-available-container {
+    margin: 20px;
+}
+
+.animal-group {
+    margin-bottom: 20px;
+}
+
+.animal-card {
+    background-color: #f0f0f0;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    margin-right: 10px;
+    display: inline-block;
+    width: calc(50% - 10px);
+    text-align: center;
+    box-sizing: border-box;
+    margin-bottom: 20px;
+}
+
+.animal-card:last-child {
+    margin-right: 0;
+}
+
+@media (max-width: 500px) {
+    .animal-card {
+        width: 100%;
+    }
+}
+
+.animals-available-container h2 {
+    text-align: center;
+}
+
+.animal-image {
+    width: 275px; 
+    height: 275px; 
+    border-radius: 5px;
+    margin-bottom: 10px;
+    object-fit: contain; 
+}
