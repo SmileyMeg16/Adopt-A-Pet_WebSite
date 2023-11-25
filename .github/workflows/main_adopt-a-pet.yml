@@ -59,4 +59,4 @@ jobs:
           app-name: 'Adopt-A-Pet'
           slot-name: 'Production'
           publish-profile: ${{ secrets.AZUREAPPSERVICE_PUBLISHPROFILE_E21B303B07A84ABAA0D948985767E5D1 }}
-          package: .
+          package: release.zip
