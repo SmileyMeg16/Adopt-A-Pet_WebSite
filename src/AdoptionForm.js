@@ -2,13 +2,14 @@ import React, { useState } from 'react';
 import './AdoptionForm.css';
 
 function AdoptionForm() {
-  const [formData, setFormData] = useState({
+  const initialFormData = {
     name: '',
     email: '',
     animal: '',
-    message: '',
     animalName: '',
-  });
+  };
+
+  const [formData, setFormData] = useState(initialFormData);
 
   const handleChange = (e) => {
     const { name, value } = e.target;
@@ -22,7 +23,7 @@ function AdoptionForm() {
     e.preventDefault();
 
     try {
-      const response = await fetch('http://localhost:3000/api/submit-adoption-form', {
+      const response = await fetch('http://localhost:3000/api/submit', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
@@ -32,20 +33,15 @@ function AdoptionForm() {
 
       if (response.ok) {
         console.log('Form data submitted successfully');
-        // Reset the form after successful submission
-        setFormData({
-          name: '',
-          email: '',
-          animal: '',
-          message: '',
-          animalName: '',
-        });
       } else {
         console.error('Form submission failed');
       }
     } catch (error) {
       console.error('Form submission error:', error);
     }
+
+    // Reset the form after submission (no matter what)
+    setFormData(initialFormData);
   };
 
   return (
@@ -95,16 +91,6 @@ function AdoptionForm() {
               type="text"
               name="animalName"
               value={formData.animalName}
-              onChange={handleChange}
-            />
-          </label>
-        </div>
-        <div>
-          <label>
-            Message:
-            <textarea
-              name="message"
-              value={formData.message}
               onChange={handleChange}
             />
           </label>
