@@ -9,7 +9,7 @@ const imagePool = [
   'Smokey.jpg', 'Whisk.jpg', 'Mitten.jpg', 'Olivia.jpg', 'Leo.jpg', 'Echo.jpg'
 ];
 
-const rotationInterval = 6500;
+const rotationInterval = 5000;
 
 function getRandomImage(currentImage) {
   let randomIndex;

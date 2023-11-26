@@ -1,6 +1,5 @@
 import React, { useState } from 'react';
 import './AdoptionForm.css';
-import locationData from './location.json'; // Import the location data
 
 function AdoptionForm() {
   const [formData, setFormData] = useState({
@@ -9,7 +8,6 @@ function AdoptionForm() {
     animal: '',
     message: '',
     animalName: '',
-    adoptionLocation: '', // Initialize adoptionLocation as an empty string
   });
 
   const handleChange = (e) => {
@@ -24,7 +22,7 @@ function AdoptionForm() {
     e.preventDefault();
 
     try {
-      const response = await fetch('http://localhost:5000/api/submit-adoption-form', {
+      const response = await fetch('http://localhost:3000/api/submit-adoption-form', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
@@ -41,7 +39,6 @@ function AdoptionForm() {
           animal: '',
           message: '',
           animalName: '',
-          adoptionLocation: '', // Reset adoptionLocation as well
         });
       } else {
         console.error('Form submission failed');
@@ -100,44 +97,6 @@ function AdoptionForm() {
               value={formData.animalName}
               onChange={handleChange}
             />
-          </label>
-        </div>
-        <div>
-          <label>
-            Adoption Location:
-            <select
-              name="adoptionLocation"
-              value={formData.adoptionLocation}
-              onChange={handleChange}
-            >
-              <option value="">Select an adoption location</option>
-              {formData.animal === 'dog' ? (
-                locationData.dog_shelters.map((shelter, index) => (
-                  <option key={index} value={shelter.address}>
-                    {shelter.name}
-                  </option>
-                ))
-              ) : formData.animal === 'cat' ? (
-                locationData.cat_shelters.map((shelter, index) => (
-                  <option key={index} value={shelter.address}>
-                    {shelter.name}
-                  </option>
-                ))
-              ) : null}
-              {formData.animal === 'dog' ? (
-                locationData.dog_breeders.map((breeder, index) => (
-                  <option key={index} value={breeder.address}>
-                    {breeder.name}
-                  </option>
-                ))
-              ) : formData.animal === 'cat' ? (
-                locationData.cat_breeders.map((breeder, index) => (
-                  <option key={index} value={breeder.address}>
-                    {breeder.name}
-                  </option>
-                ))
-              ) : null}
-            </select>
           </label>
         </div>
         <div>

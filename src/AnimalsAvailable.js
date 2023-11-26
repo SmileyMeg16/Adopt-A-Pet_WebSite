@@ -6,7 +6,7 @@ function AnimalCard({ animal, getImageFilename }) {
     <div className="animal-card">
       <img
         src={`/images/${getImageFilename(animal.name)}`}
-        alt={`${animal.name} Image`}
+        alt={animal.name}
         className="animal-image"
       />
       <div className="animal-details">
